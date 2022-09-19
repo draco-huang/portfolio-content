@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>About Me</title>
 </head>
@@ -10,7 +11,8 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html" style="background-color: #f0ae75; color: black">About Me</a>
+            <a href="./index.html" href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">About
+                Me</a>
             <a href="html/work.html">Work</a>
             <a href="html/piano.html">Piano</a>
             <a href="html/badminton.html">Badminton</a>
@@ -18,44 +20,101 @@
     </header>
 
     <main>
-        <div class="profile">
-            <div>
-                <img src="image/profile_avatar.png" alt="avatar" class="avatar">
+        <div class="gallery">
+            <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button>
+            <div class="gallery-window">
+                <img class="gallery-img" alt="me" src="image/profile_me.png">
+                <img class="gallery-img" alt="pet" src="image/profile_pet.png">
+                <img class="gallery-img" alt="dorm" src="image/profile_dorm.png">
+                <img class="gallery-img" alt="travel" src="image/profile_travel.png">
+                <div class="gallery-bullet">
+                    <span class="bullet" onclick="selectIMG(0)"></span>
+                    <span class="bullet" onclick="selectIMG(1)"></span>
+                    <span class="bullet" onclick="selectIMG(2)"></span>
+                    <span class="bullet" onclick="selectIMG(3)"></span>
+                </div>
             </div>
-            <div>
+            <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button>
+            <script src="js/script.js"></script>
+        </div>
+
+        <hr>
+
+        <div class="profile">
+            <img src="image/profile_avatar.png" alt="avatar" class="avatar">
+            <div class="profile-text">
                 <h2>
                     Hi there, I'm <em>Michael Huang</em> 👋
                 </h2>
                 <ul>
                     <li>I'm a master student of Information Science 🔍 <a href="https://umich.edu"
-                            target="_blank">@University of Michigan</a>.</li>
+                            target="_blank">@University of Michigan</a></li>
                     <li>I got the B.Eng 💻 <a href="https://www.sjtu.edu.cn/" target="_blank">@Shanghai
                             Jiao
                             Tong University</a> <a href="https://www.ji.sjtu.edu.cn/" target="_blank">@UM-SJTU Joint
-                            Institute</a>.<ul>
+                            Institute</a>
+                        <ul>
                             <li>Major: Electrical and Computer Engineering (ECE)</li>
                             <li>Dual Minor: Computer Science (CS) &amp; Entrepreneurship</li>
                         </ul>
                     </li>
                     <li>I was an exchange student in Computer Science (CS) <a href="https://www.wisc.edu"
-                            target="_blank">@UW-Madison</a>.</li>
+                            target="_blank">@UW-Madison</a></li>
                 </ul>
             </div>
-
         </div>
-        <img alt="me" src="image/profile_me.png">
-        <img alt="pet" src="image/profile_pet.png">
-        <img alt="dorm" src="image/profile_dorm.png">
-        <img alt="travel" src="image/profile_travel.png">
 
-        <h2>Projects</h2>
-        <p>You can find some interesting projects in my <a href="https://github.com/kx-Huang/" target="_blank">Github
-                Account</a>. Here are some selected projects as portfolio.</p>
+        <hr>
 
-        <img alt="IIFire" src="image/project_iifire.png">
-        <img alt="SmarTemp" src="image/project_smartemp.gif">
-        <img alt="mumsh" src="image/project_mumsh.png">
-
+        <h1 class="project">Projects</h2>
+            <div class="project-overview">
+                <p>Here are some selected projects as portfolio, you can click the demo card for
+                    more details. </p>
+                <p>Also, you can find some more interesting projects in my <a href="https://github.com/kx-Huang/"
+                        target="_blank">Github
+                        Account</a>.</p>
+            </div>
+            <div class="project-demo">
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/IIFire/">
+                    <img src="image/project_iifire.gif" alt="IIFire" style="width:100%">
+                    <div class="project-text">
+                        <h3>IIFire: Intelligent firefighting system based on IoT & FAHP algorithm</h3>
+                        <br>
+                        <p>IIFire is an integrated system deployed on
+                            government servers of Shanghai fire brigade, which detects potential fire hazard and report
+                            real-life fire alarms in buildings to save people's life and money. Currently, IIFire is
+                            connected with over 7 million IoT devices in China.
+                        </p>
+                        <p>
+                            The core data-processing part is driven by Computer Vision & Fuzzy Analytic
+                            Hierarchy Process (FAHP) algorithm. And IIFire comes with an webpage interface developed
+                            with React.js and a cross-platform app developed with React Native. The backend is
+                            built with FastAPI and the database is
+                            powered by MongoDB.</p>
+                    </div>
+                </a>
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/Smartemp/">
+                    <img src="image/project_smartemp.gif" alt="SmarTemp" style="width:100%">
+                    <div class="project-text">
+                        <h3>SmarTemp: Temperature Measure & Manage Assistant</h3>
+                        <br>
+                        <p>SmarTemp is an efficient tool for temperature measurement & management in COVID-19. SmarTemp
+                            consists of a WeChat mini-program developed with JavaScript, HTML and CSS, and a
+                            matched infrared thermometer which can be connected to mobiles via Bluetooth.</p>
+                    </div>
+                </a>
+            </div>
+            <a class="project-card-horizontal" target="_blank" href="https://kx-huang.github.io/posts/mumsh/">
+                <img src="image/project_mumsh.png" alt="mumsh" style="margin-top: auto; margin-bottom: auto;">
+                <div class="project-text" style="width: 90%;">
+                    <h3>Mumsh: A Mini Shell Written in C</h3>
+                    <br>
+                    <p>Mumsh is a mini shell supporting both basic shell functionalities such as I/O redirection,
+                        arbitrarily-deep pipes, background jobs, incomplete input handling, quotation mark parsing and
+                        CTRL-C interruption, as well as advanced features such as tab-triggered
+                        hint, auto completion and history smart search.</p>
+                </div>
+            </a>
     </main>
 
     <footer>
