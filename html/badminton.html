@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/html5reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>About Me</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/html5reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>About Me</title>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="../index.html">About Me</a>
-            <a href="./work.html">Work</a>
-            <a href="./piano.html">Piano</a>
-            <a href="./badminton.html" href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">Badminton</a>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">About Me</a>
+                <a href="./work.html">Work</a>
+                <a href="./piano.html">Piano</a>
+                <a href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">Badminton</a>
+            </nav>
+        </header>
 
-    <main>
-        <h2>As a Professional Badminton Player 🏸</h2>
-        <ul>
-            <li>I was a member of SJTU Badminton Team and HuangPu District Badminton Team.</li>
-            <li>I won a 🥇 gold medal in <em>Man’s Team</em> and 🥈 silver medal in <em>Man’s Doubles</em> in Shanghai
-                professional badminton competitions.</li>
-            <li>I won a 🥇 gold medal in <em>Mixed Team</em> on behalf of UM-SJTU Joint Institute in 2019 SJTU Sport
-                Competiton.</li>
-            <li>I won a 🥇 gold medal in <em>Mixed Team</em> in 5th UM-SJTU Joint Institute Teacher-Student Badminton
-                Competition.</li>
-            <li>I won a 🥈 silver medal in <em>Man’s Single</em> in 2019 SJTU Badminton Freshman Cup.</li>
-        </ul>
-        <img alt="badminton" src="../image/badminton_cover.png">
+        <div class="gallery">
+            <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button>
+            <div class="gallery-window">
+                <img class="gallery-img" alt="sindhu" src="../image/badminton_sindhu.png">
+                <img class="gallery-img" alt="huang-dongping" src="../image/badminton_hdp.png">
+                <img class="gallery-img" alt="lukas" src="../image/badminton_lukas.png">
+                <img class="gallery-img" alt="double" src="../image/badminton_cover.png">
+                <div class="gallery-bullet">
+                    <span class="bullet" onclick="selectIMG(0)"></span>
+                    <span class="bullet" onclick="selectIMG(1)"></span>
+                    <span class="bullet" onclick="selectIMG(2)"></span>
+                    <span class="bullet" onclick="selectIMG(3)"></span>
+                </div>
+            </div>
+            <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button>
+            <script src="../js/script.js"></script>
+        </div>
 
-    </main>
+        <main id="main">
+            <hr>
+            <br>
+            <h1 class="title">As a Professional Badminton Player 🏸</h1>
+            <br>
+            <ul class="text">
+                <li>I am a member of UMich Badminton Team.</li>
+                <li>I was a member of SJTU Badminton Team and HuangPu District Badminton Team.</li>
+                <li>I won a 🥇 gold medal in <em>Man's Team</em> and 🥈 silver medal in <em>Man's Doubles</em> in Shanghai junior badminton competitions.</li>
+                <li>I won a 🥇 gold medal in <em>Mixed Team</em> on behalf of UM-SJTU Joint Institute in 2019 SJTU Sport Competiton.</li>
+                <li>I won a 🥇 gold medal in <em>Mixed Team</em> in 5th UM-SJTU Joint Institute Teacher-Student Badminton Competition.</li>
+                <li>I won a 🥈 silver medal in <em>Man's Single</em> in 2019 SJTU Badminton Freshman Cup.</li>
+            </ul>
+            <br>
+            <hr>
+        </main>
 
-    <footer>
-
-    </footer>
-</body>
+        <footer>
+            <a class="back-to-top" href="#main">
+            </a>
+        </footer>
+    </body>
 
 </html>

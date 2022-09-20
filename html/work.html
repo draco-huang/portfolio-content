@@ -1,54 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/html5reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>About Me</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/html5reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>About Me</title>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="../index.html">About Me</a>
-            <a href="./work.html" href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">Work</a>
-            <a href="./piano.html">Piano</a>
-            <a href="./badminton.html">Badminton</a>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">About Me</a>
+                <a href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">Work</a>
+                <a href="./piano.html">Piano</a>
+                <a href="./badminton.html">Badminton</a>
+            </nav>
+        </header>
 
-    <main>
-        <p>Hi there, I'm Michael Huang. You can find my résumé 📝
-            <a href="doc/resume.pdf" target="_blank">here</a>
-            .
-        </p>
-        <p>Currently, I’m seeking for 2023 summer intern in United States 🇺🇸. I’m interested in:</p>
-        <ul>
-            <li>Software development: back-end, front-end</li>
-            <li>Data Science &amp; Engineering: big-data, database, distributed system</li>
-            <li>User Experience (UX) &amp; Human-Computer Interaction (HCI) Design</li>
-        </ul>
-        <p>Please do contact me if you are recruiting!</p>
-        <h2>Past Experiences</h2>
-        <ul>
+        <div class="gallery">
+            <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button>
+            <div class="gallery-window">
+                <img class="gallery-img" alt="Segway-Ninebot" src="../image/work_segway.png">
+                <img class="gallery-img" alt="AMD" src="../image/work_amd.png">
+                <img class="gallery-img" alt="AMD-workspace" src="../image/work_workspace.png">
+                <img class="gallery-img" alt="teaching-assistant" src="../image/work_ta.jpg">
+                <div class="gallery-bullet">
+                    <span class="bullet" onclick="selectIMG(0)"></span>
+                    <span class="bullet" onclick="selectIMG(1)"></span>
+                    <span class="bullet" onclick="selectIMG(2)"></span>
+                    <span class="bullet" onclick="selectIMG(3)"></span>
+                </div>
+            </div>
+            <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button>
+            <script src="../js/script.js"></script>
+        </div>
 
-            <li>I was a Design Verification Engineer Intern 🛠️ <a href="https://www.amd.com/en"
-                    target="_blank">@AMD</a>.</li>
-            <li>I was an Embedded Software Engineer Intern 🤖 <a href="http://ap-en.segway.com/"
-                    target="_blank">@Segway-Ninebot</a>.</li>
-            <li>I was a teaching assistant of VE300 &amp; VE496 courses ✏️ <a href="https://www.ji.sjtu.edu.cn/"
-                    target="_blank">@UM-SJTU Joint Institute</a>.</li>
-            <li>I was a research intern 🔬<a href="https://www.ji.sjtu.edu.cn/" target="_blank">@UM-SJTU Joint
-                    Institute</a></li>
-        </ul>
-        <img alt="AMD" src="../image/work_amd.png">
-        <img alt="Segway-Ninebot" src="../image/work_segway.png">
-    </main>
+        <main id="main">
+            <hr>
+            <h1 class="title">Interests</h1>
+            <h2 class="text">Currently, I'm seeking for <em>2023 Summer Intern</em> in <em> United States 🇺🇸</em></h2>
+            <ul class="text">
+                <li>Software development: back-end, front-end</li>
+                <li>Data Science &amp; Engineering: big-data, database, distributed system</li>
+                <li>User Experience (UX) &amp; Human-Computer Interaction (HCI) Design</li>
+            </ul>
+            <br>
+            <hr>
+            <h1 class="title">Resume</h1>
+            <p class="text">You can find my résumé 📝
+                <a href="../doc/resume.pdf" target="_blank">here</a>, please DO contact me if you are recruiting! 🤜🤛
+            </p>
+            <hr>
 
-    <footer>
+            <h1 class="title">Education</h1>
+            <ul class="text">
+                <li>I'm a master student of Information Science 🔍 <a href="https://umich.edu" target="_blank">@University of Michigan</a></li>
+                <li>I got the B.Eng 💻 <a href="https://www.sjtu.edu.cn/" target="_blank">@Shanghai Jiao Tong University</a> <a href="https://www.ji.sjtu.edu.cn/" target="_blank">@UM-SJTU Joint Institute</a>
+                    <ul>
+                        <li>Major: Electrical and Computer Engineering (ECE)</li>
+                        <li>Dual Minor: Computer Science (CS) &amp; Entrepreneurship</li>
+                    </ul>
+                </li>
+                <li>I was an exchange student in Computer Science (CS) <a href="https://www.wisc.edu" target="_blank">@UW-Madison</a></li>
+            </ul>
+            <br>
+            <hr>
+            <h1 class="title">Past Experiences</h1>
+            <ul class="text">
+                <li>I was a Design Verification Engineer Intern 🛠️ <a href="https://www.amd.com/en" target="_blank">@AMD</a>.</li>
+                <li>I was an Embedded Software Engineer Intern 🤖 <a href="http://ap-en.segway.com/" target="_blank">@Segway-Ninebot</a>.</li>
+                <li>I was an advanced teaching assistant of VE300 &amp; VE496 courses ✏️ <a href="https://www.ji.sjtu.edu.cn/" target="_blank">@UM-SJTU Joint Institute</a>.</li>
+                <li>I was a research intern 🔬 <a href="https://www.ji.sjtu.edu.cn/" target="_blank">@UM-SJTU Joint Institute</a></li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </main>
 
-    </footer>
-</body>
+        <footer>
+            <a class="back-to-top" href="#main">
+            </a>
+        </footer>
+    </body>
 
 </html>
