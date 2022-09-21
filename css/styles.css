@@ -213,7 +213,7 @@ hr {
 }
 
 .project-card {
-  box-shadow: -4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
   margin-left: 15px;
   margin-right: 15px;
@@ -222,7 +222,7 @@ hr {
 }
 
 .project-card:hover {
-  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -8px 16px 32px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
   text-decoration: none;
 }
@@ -242,7 +242,7 @@ hr {
 
 .project-card-horizontal {
   display: flex;
-  box-shadow: -4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
   margin: 0px 6% 30px 6%;
   cursor: pointer;
@@ -250,7 +250,7 @@ hr {
 }
 
 .project-card-horizontal:hover {
-  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -8px 16px 32px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
   text-decoration: none;
 }
