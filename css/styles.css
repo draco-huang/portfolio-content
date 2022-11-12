@@ -329,6 +329,15 @@ hr {
   height: 20px;
   background-color: #84a9c0;
   transition: 0.35s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.back-to-top:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .back-to-top-text {
