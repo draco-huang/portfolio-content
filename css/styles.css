@@ -171,9 +171,13 @@ hr {
   justify-content: center;
 }
 
+.gallery-imgs {
+  width: 100%;
+}
+
 .gallery-img {
+  height: 350px;
   width: auto;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5%;
@@ -191,11 +195,10 @@ hr {
   font-size: 40px;
   padding: 0;
   border: none;
-  margin: 50px;
   opacity: 50%;
   color: white;
   background-color: transparent;
-  margin: -15%;
+  margin: -5%;
   transition: 0.5s;
 }
 
@@ -455,5 +458,20 @@ hr {
 
   .gallery-switch {
     margin: -3px;
+  }
+
+  .gallery-img {
+    height: 350px;
+    width: auto;
+  }
+
+  .gallery-window {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .gallery-imgs {
+    width: 100%;
   }
 }
