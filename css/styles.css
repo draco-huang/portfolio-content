@@ -8,6 +8,27 @@ img {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body {
+  display: grid;
+  grid-template: 48px 430px auto 10px/ 100%;
+}
+
+header {
+  grid-row: 1;
+}
+
+aside {
+  grid-row: 2;
+}
+
+main {
+  grid-row: 3;
+}
+
+footer {
+  grid-row: 4;
+}
+
 div {
   background-color: transparent;
 }
@@ -43,7 +64,7 @@ em {
 nav {
   overflow: hidden;
   display: flex;
-  font-family: "Gill Sans";
+  font-family: "Audiowide", "Gill Sans";
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
 }
@@ -93,6 +114,7 @@ h2 {
 
 h1 {
   font-size: 38px;
+  font-family: "Audiowide", "Gill Sans";
   line-height: 60px;
   color: #ddfcad;
 }
@@ -313,4 +335,121 @@ hr {
 .back-to-top:hover {
   background-color: #ffafc5;
   transition: 0.35s;
+}
+
+.video {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+@media (prefers-reduced-motion) {
+  nav a {
+    transition: none;
+  }
+
+  nav a:hover {
+    transition: none;
+  }
+
+  .avatar {
+    transition: none;
+  }
+
+  .avatar:hover {
+    transition: none;
+  }
+
+  .gallery-img {
+    transition: none;
+  }
+
+  .gallery-img:hover {
+    transition: none;
+  }
+
+  .gallery-switch {
+    transition: none;
+  }
+
+  .gallery-switch:hover {
+    transition: none;
+  }
+
+  .project-card {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transition: none;
+  }
+
+  .project-card-horizontal {
+    transition: none;
+  }
+
+  .project-card-horizontal:hover {
+    transition: none;
+  }
+
+  .back-to-top {
+    transition: none;
+  }
+
+  .back-to-top:hover {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    grid-template: 192px 430px auto 10px/ 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  .profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 10px;
+  }
+
+  .project-demo {
+    flex-wrap: wrap;
+    margin: 0 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .piano-profile-text {
+    width: 100%;
+    left: 0;
+  }
+
+  .piano-profile-title {
+    font-size: 36px;
+  }
+
+  .piano-profile-description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  iframe {
+    height: 300px;
+  }
 }

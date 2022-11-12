@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <script src="https://kit.fontawesome.com/5a23291402.js" crossorigin="anonymous"></script>
         <title>About Me</title>
     </head>
 
@@ -18,7 +20,7 @@
             </nav>
         </header>
 
-        <div class="gallery">
+        <aside class="gallery">
             <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button>
             <div class="gallery-window">
                 <img class="gallery-img" alt="me" src="image/profile_me.png">
@@ -36,7 +38,7 @@
             </div>
             <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button>
             <script src="js/script.js"></script>
-        </div>
+        </aside>
 
         <main id="main">
             <hr>
@@ -44,19 +46,20 @@
                 <img src="image/profile_avatar.png" alt="avatar" class="avatar">
                 <div class="profile-text">
                     <h2>
+                        <i class="fa-solid fa-dragon"></i>
                         Hi there, I'm <em>Michael Huang</em> 👋
                     </h2>
                     <p>I'm a master student of Information Science 🔍 <a href="https://umich.edu" target="_blank">@University of Michigan</a>.
-                        Apart from a student, I'm also a ...
+                        Apart from a student, I'm also a
                     </p>
 
                     <ul>
                         <li> Dobermann Keeper 🐶 (his name is Lucky)</li>
                         <li> Travel Enthusiast ✈️ </li>
-                        <li> <a href="html/work.html">Programmer</a> 💻</li>
-                        <li> <a href="html/piano.html">Anime Piano Player</a> 🎹</li>
+                        <li> <a href="work.html">Programmer</a> 💻</li>
+                        <li> <a href="piano.html">Anime Piano Player</a> 🎹</li>
                         <li>
-                            <a href="html/badminton.html">Retired Badminton Athelete</a> 🏸️
+                            <a href="badminton.html">Retired Badminton Athelete</a> 🏸️
                         </li>
                     </ul>
                 </div>
@@ -102,16 +105,16 @@
                     </div>
                 </a>
             </div>
-            <a class="project-card-horizontal" target="_blank" href="https://kx-huang.github.io/posts/mumsh/">
-                <img src="image/project_mumsh.png" alt="mumsh" style="margin-top: auto; margin-bottom: auto; background-color: #F3D0FD;">
-                <div class="project-text">
-                    <h3>Mumsh: A Mini Shell Written in C</h3>
-                    <br>
-                    <p>Mumsh is a mini shell supporting both basic shell functionalities such as I/O redirection, arbitrarily-deep pipes, background jobs, incomplete input handling, quotation mark parsing and CTRL-C interruption, as well as advanced features such as tab-triggered hint, auto completion and history smart search.</p>
-                </div>
-            </a>
             <div class="project-demo">
-                <a class="project-card" style="width: 35%" target="_blank" href="https://kx-huang.github.io/posts/LemonDB/">
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/mumsh/">
+                    <img src="image/project_mumsh.png" alt="mumsh" style="width: 100%; background-color: #F3D0FD;">
+                    <div class="project-text">
+                        <h3>Mumsh: A Mini Shell Written in C</h3>
+                        <br>
+                        <p>Mumsh is a mini shell supporting both basic shell functionalities such as I/O redirection, arbitrarily-deep pipes, background jobs, incomplete input handling, quotation mark parsing and CTRL-C interruption, as well as advanced features such as tab-triggered hint, auto completion and history smart search.</p>
+                    </div>
+                </a>
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/LemonDB/">
                     <img src="image/project_lemondb.png" alt="LemonDB" style="width:100%">
                     <div class="project-text">
                         <h3>LemonDB: A Multi-threading Database</h3>
@@ -120,7 +123,9 @@
                         </p>
                     </div>
                 </a>
-                <a class="project-card" style="width: 35%" target="_blank" href="https://kx-huang.github.io/posts/MSD_analysis/">
+            </div>
+            <div class="project-demo">
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/MSD_analysis/">
                     <img src="image/project_msd.png" alt="msd" style="width:100%">
                     <div class="project-text">
                         <h3>Big Data Analysis on MSD</h3>
@@ -128,7 +133,7 @@
                         <p>We performed big data analysis on 20GB Million Song Dataset using parallelized BFS algorithm with Hadoop MapReduce, Spark, Drill and Avro on clusters.</p>
                     </div>
                 </a>
-                <a class="project-card" style="width: 35%" target="_blank" href="https://kx-huang.github.io/posts/MIPS_simulator/">
+                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/MIPS_simulator/">
                     <img src="image/project_mips.png" alt="mips" style="width:100%">
                     <div class="project-text">
                         <h3>MIPS CPU Simulator</h3>
