@@ -463,8 +463,8 @@ hr {
   .gallery-img {
     height: auto;
     width: auto;
-    max-height: 350px;
-    max-width: 100%;
+    max-height: 360px;
+    max-width: 95%;
   }
 
   .gallery-window {
