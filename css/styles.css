@@ -338,13 +338,6 @@ hr {
 .back-to-top:hover {
   text-decoration: none;
   color: black;
-}
-
-.back-to-top-text {
-  color: white;
-}
-
-.back-to-top:hover {
   background-color: #ffafc5;
   transition: 0.35s;
 }
