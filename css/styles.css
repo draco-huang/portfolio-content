@@ -452,4 +452,8 @@ hr {
   iframe {
     height: 300px;
   }
+
+  .gallery-switch {
+    margin: -3px;
+  }
 }
