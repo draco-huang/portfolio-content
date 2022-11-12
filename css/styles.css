@@ -404,7 +404,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
     grid-template: 192px 430px auto 10px/ 100%;
   }
@@ -461,8 +461,10 @@ hr {
   }
 
   .gallery-img {
-    height: 350px;
+    height: auto;
     width: auto;
+    max-height: 350px;
+    max-width: 100%;
   }
 
   .gallery-window {
