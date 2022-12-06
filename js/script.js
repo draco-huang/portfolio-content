@@ -25,3 +25,7 @@ const moveSelector = (move) => {
 setInterval(() => {
   moveSelector(1);
 }, 5000);
+
+setTimeout(() => {
+  document.body.className = "";
+}, 500);

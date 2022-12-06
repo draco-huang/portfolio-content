@@ -1,157 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K6R496ZXQV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K6R496ZXQV");
+    </script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/html5reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <script src="https://kit.fontawesome.com/5a23291402.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About Me</title>
-    </head>
+  <body class="preload">
+    <header>
+      <nav>
+        <a
+          href="#main"
+          style="background-color: #ffb86f; color: black; font-weight: 610"
+          >About Me</a
+        >
+        <a href="work.html">Work</a>
+        <a href="piano.html">Piano</a>
+        <a href="badminton.html">Badminton</a>
+      </nav>
+    </header>
 
-    <body>
-        <header>
-            <nav>
-                <a href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">About Me</a>
-                <a href="work.html">Work</a>
-                <a href="piano.html">Piano</a>
-                <a href="badminton.html">Badminton</a>
-            </nav>
-        </header>
+    <aside class="gallery">
+      <!-- <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button> -->
+      <div class="gallery-window">
+        <div class="gallery-imgs">
+          <img class="gallery-img" alt="me" src="image/profile_me.png" />
+          <!-- <img class="gallery-img" alt="pet" src="image/profile_pet.png"> -->
+          <img
+            class="gallery-img"
+            alt="travel"
+            src="image/profile_travel.png"
+          />
+          <img class="gallery-img" alt="intern" src="image/work_segway.png" />
+          <img
+            class="gallery-img"
+            alt="badminton"
+            src="image/badminton_cover.png"
+          />
+        </div>
+        <div class="gallery-bullet">
+          <span class="bullet" onclick="selectIMG(0)"></span>
+          <span class="bullet" onclick="selectIMG(1)"></span>
+          <span class="bullet" onclick="selectIMG(2)"></span>
+          <span class="bullet" onclick="selectIMG(3)"></span>
+          <!-- <span class="bullet" onclick="selectIMG(4)"></span> -->
+        </div>
+      </div>
+      <!-- <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button> -->
+      <script src="js/script.js"></script>
+    </aside>
 
-        <aside class="gallery">
-            <!-- <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button> -->
-            <div class="gallery-window">
-                <div class="gallery-imgs">
-                    <img class="gallery-img" alt="me" src="image/profile_me.png">
-                    <!-- <img class="gallery-img" alt="pet" src="image/profile_pet.png"> -->
-                    <img class="gallery-img" alt="travel" src="image/profile_travel.png">
-                    <img class="gallery-img" alt="intern" src="image/work_segway.png">
-                    <img class="gallery-img" alt="badminton" src="image/badminton_cover.png">
-                </div>
-                <div class="gallery-bullet">
-                    <span class="bullet" onclick="selectIMG(0)"></span>
-                    <span class="bullet" onclick="selectIMG(1)"></span>
-                    <span class="bullet" onclick="selectIMG(2)"></span>
-                    <span class="bullet" onclick="selectIMG(3)"></span>
-                    <!-- <span class="bullet" onclick="selectIMG(4)"></span> -->
-                </div>
-            </div>
-            <!-- <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button> -->
-            <script src="js/script.js"></script>
-        </aside>
+    <main id="main">
+      <hr />
+      <div class="profile">
+        <img src="image/profile_avatar.png" alt="avatar" class="avatar" />
+        <div class="profile-text">
+          <h2>
+            <i class="fa-solid fa-dragon"></i>
+            Hi there, I'm <em>Michael Huang</em> 👋
+          </h2>
+          <p>
+            I'm a master student of Information Science 🔍
+            <a href="https://umich.edu" target="_blank"
+              >@University of Michigan</a
+            >. Apart from a student, I'm also a
+          </p>
 
-        <main id="main">
-            <hr>
-            <div class="profile">
-                <img src="image/profile_avatar.png" alt="avatar" class="avatar">
-                <div class="profile-text">
-                    <h2>
-                        <i class="fa-solid fa-dragon"></i>
-                        Hi there, I'm <em>Michael Huang</em> 👋
-                    </h2>
-                    <p>I'm a master student of Information Science 🔍 <a href="https://umich.edu" target="_blank">@University of Michigan</a>.
-                        Apart from a student, I'm also a
-                    </p>
+          <ul>
+            <li>Dobermann Keeper 🐶 (his name is Lucky)</li>
+            <li>Travel Enthusiast ✈️</li>
+            <li><a href="work.html">Programmer</a> 💻</li>
+            <li><a href="piano.html">Anime Piano Player</a> 🎹</li>
+            <li><a href="badminton.html">Retired Badminton Athelete</a> 🏸️</li>
+          </ul>
+        </div>
+      </div>
 
-                    <ul>
-                        <li> Dobermann Keeper 🐶 (his name is Lucky)</li>
-                        <li> Travel Enthusiast ✈️ </li>
-                        <li> <a href="work.html">Programmer</a> 💻</li>
-                        <li> <a href="piano.html">Anime Piano Player</a> 🎹</li>
-                        <li>
-                            <a href="badminton.html">Retired Badminton Athelete</a> 🏸️
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <hr />
 
-            <!-- <hr> -->
-            <!-- <h1 class="title">Photo Gallery</h1>
-            <p class="text">
-                Here're some of my favourite photos.
-            </p> -->
-            <hr>
+      <h1 class="title">Projects</h1>
+      <div class="text">
+        <p>
+          Here are some selected projects as portfolio, you can click the demo
+          card for more details.
+        </p>
+        <p>
+          Also, you can find some more interesting projects in my
+          <a href="https://github.com/kx-Huang/" target="_blank"
+            >Github Account</a
+          >.
+        </p>
+      </div>
+      <div class="project-demo">
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/IIFire/"
+        >
+          <img
+            src="image/project_iifire.gif"
+            alt="IIFire"
+            style="width: 100%"
+          />
+          <div class="project-text">
+            <h3>
+              IIFire: Intelligent firefighting system based on IoT & FAHP
+              algorithm
+            </h3>
+            <br />
+            <p>
+              IIFire is an integrated system deployed on government servers of
+              Shanghai fire brigade, which detects potential fire hazard and
+              report real-life fire alarms in buildings to save people's life
+              and money. Currently, IIFire is connected with over 7 million IoT
+              devices in China.
+            </p>
+            <p>
+              The core data-processing part is driven by Computer Vision & Fuzzy
+              Analytic Hierarchy Process (FAHP) algorithm. And IIFire comes with
+              an webpage interface developed with React.js and a cross-platform
+              app developed with React Native. The backend is built with FastAPI
+              and the database is powered by MongoDB.
+            </p>
+          </div>
+        </a>
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/Smartemp/"
+        >
+          <img
+            src="image/project_smartemp.gif"
+            alt="SmarTemp"
+            style="width: 100%"
+          />
+          <div class="project-text">
+            <h3>SmarTemp: Temperature Measure & Manage Assistant</h3>
+            <br />
+            <p>
+              SmarTemp is an efficient tool for temperature measurement &
+              management in COVID-19. SmarTemp consists of a WeChat mini-program
+              developed with JavaScript, HTML and CSS, and a matched infrared
+              thermometer which can be connected to mobiles via Bluetooth.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="project-demo">
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/mumsh/"
+        >
+          <img
+            src="image/project_mumsh.png"
+            alt="mumsh"
+            style="width: 100%; background-color: #f3d0fd"
+          />
+          <div class="project-text">
+            <h3>Mumsh: A Mini Shell Written in C</h3>
+            <br />
+            <p>
+              Mumsh is a mini shell supporting both basic shell functionalities
+              such as I/O redirection, arbitrarily-deep pipes, background jobs,
+              incomplete input handling, quotation mark parsing and CTRL-C
+              interruption, as well as advanced features such as tab-triggered
+              hint, auto completion and history smart search.
+            </p>
+          </div>
+        </a>
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/LemonDB/"
+        >
+          <img
+            src="image/project_lemondb.png"
+            alt="LemonDB"
+            style="width: 100%"
+          />
+          <div class="project-text">
+            <h3>LemonDB: A Multi-threading Database</h3>
+            <br />
+            <p>
+              We implement an in-memory database LemonDB using C++, which
+              features thread pool as architecture design and partition
+              programming as multi-threading resolutions.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="project-demo">
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/MSD_analysis/"
+        >
+          <img src="image/project_msd.png" alt="msd" style="width: 100%" />
+          <div class="project-text">
+            <h3>Big Data Analysis on MSD</h3>
+            <br />
+            <p>
+              We performed big data analysis on 20GB Million Song Dataset using
+              parallelized BFS algorithm with Hadoop MapReduce, Spark, Drill and
+              Avro on clusters.
+            </p>
+          </div>
+        </a>
+        <a
+          class="project-card"
+          target="_blank"
+          href="https://kx-huang.github.io/posts/MIPS_simulator/"
+        >
+          <img src="image/project_mips.png" alt="mips" style="width: 100%" />
+          <div class="project-text">
+            <h3>MIPS CPU Simulator</h3>
+            <br />
+            <p>
+              A simple MIPS CPU simulator with both single-cycle and pipeline
+              version in Verilog, which features hazard detection and
+              forwarding.
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
 
-            <h1 class="title">Projects</h1>
-            <div class="text">
-                <p>Here are some selected projects as portfolio, you can click the demo card for more details. </p>
-                <p>Also, you can find some more interesting projects in my <a href="https://github.com/kx-Huang/" target="_blank">Github Account</a>.</p>
-            </div>
-            <div class="project-demo">
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/IIFire/">
-                    <img src="image/project_iifire.gif" alt="IIFire" style="width:100%">
-                    <div class="project-text">
-                        <h3>IIFire: Intelligent firefighting system based on IoT & FAHP algorithm</h3>
-                        <br>
-                        <p>IIFire is an integrated system deployed on
-                            government servers of Shanghai fire brigade, which detects potential fire hazard and report
-                            real-life fire alarms in buildings to save people's life and money. Currently, IIFire is
-                            connected with over 7 million IoT devices in China.
-                        </p>
-                        <p>
-                            The core data-processing part is driven by Computer Vision & Fuzzy Analytic
-                            Hierarchy Process (FAHP) algorithm. And IIFire comes with an webpage interface developed
-                            with React.js and a cross-platform app developed with React Native. The backend is
-                            built with FastAPI and the database is
-                            powered by MongoDB.</p>
-                    </div>
-                </a>
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/Smartemp/">
-                    <img src="image/project_smartemp.gif" alt="SmarTemp" style="width:100%">
-                    <div class="project-text">
-                        <h3>SmarTemp: Temperature Measure & Manage Assistant</h3>
-                        <br>
-                        <p>SmarTemp is an efficient tool for temperature measurement & management in COVID-19. SmarTemp consists of a WeChat mini-program developed with JavaScript, HTML and CSS, and a matched infrared thermometer which can be connected to mobiles via Bluetooth.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="project-demo">
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/mumsh/">
-                    <img src="image/project_mumsh.png" alt="mumsh" style="width: 100%; background-color: #F3D0FD;">
-                    <div class="project-text">
-                        <h3>Mumsh: A Mini Shell Written in C</h3>
-                        <br>
-                        <p>Mumsh is a mini shell supporting both basic shell functionalities such as I/O redirection, arbitrarily-deep pipes, background jobs, incomplete input handling, quotation mark parsing and CTRL-C interruption, as well as advanced features such as tab-triggered hint, auto completion and history smart search.</p>
-                    </div>
-                </a>
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/LemonDB/">
-                    <img src="image/project_lemondb.png" alt="LemonDB" style="width:100%">
-                    <div class="project-text">
-                        <h3>LemonDB: A Multi-threading Database</h3>
-                        <br>
-                        <p>We implement an in-memory database LemonDB using C++, which features thread pool as architecture design and partition programming as multi-threading resolutions.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="project-demo">
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/MSD_analysis/">
-                    <img src="image/project_msd.png" alt="msd" style="width:100%">
-                    <div class="project-text">
-                        <h3>Big Data Analysis on MSD</h3>
-                        <br>
-                        <p>We performed big data analysis on 20GB Million Song Dataset using parallelized BFS algorithm with Hadoop MapReduce, Spark, Drill and Avro on clusters.</p>
-                    </div>
-                </a>
-                <a class="project-card" target="_blank" href="https://kx-huang.github.io/posts/MIPS_simulator/">
-                    <img src="image/project_mips.png" alt="mips" style="width:100%">
-                    <div class="project-text">
-                        <h3>MIPS CPU Simulator</h3>
-                        <br>
-                        <p>A simple MIPS CPU simulator with both single-cycle and pipeline version in Verilog, which features hazard detection and forwarding.</p>
-                    </div>
-                </a>
-            </div>
-        </main>
-
-        <footer>
-            <!-- <a class="back-to-top" href="#main">
-                ⬆
-            </a> -->
-        </footer>
-    </body>
-
+    <footer>
+      <hr />
+      <h1
+        class="title"
+        style="
+          font-size: 35px;
+          margin-bottom: 5px;
+          color: #ddfcad;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        > Contact me now!
+      </h1>
+      <form
+        action="https://formspree.io/f/xpznvdzg"
+        target="_blank"
+        method="POST"
+        class="form"
+      >
+        <label class="form-item">
+          <div class="form-label">Your Email:</div>
+          <input type="email" name="email" />
+        </label>
+        <label class="form-item">
+          <div class="form-label">Your Message:</div>
+          <textarea name="message"></textarea>
+        </label>
+        <button
+          class="form-item"
+          type="submit"
+          style="justify-self: center; font-size: 25px; color: #ffb86f"
+        >
+          Send !
+        </button>
+      </form>
+    </footer>
+  </body>
 </html>

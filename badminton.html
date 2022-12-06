@@ -1,74 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Badminton</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K6R496ZXQV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K6R496ZXQV");
+    </script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/html5reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About Me</title>
-    </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">About Me</a>
+        <a href="work.html">Work</a>
+        <a href="piano.html">Piano</a>
+        <a
+          href="#main"
+          style="background-color: #ffb86f; color: black; font-weight: 610"
+          >Badminton</a
+        >
+      </nav>
+    </header>
 
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">About Me</a>
-                <a href="work.html">Work</a>
-                <a href="piano.html">Piano</a>
-                <a href="#main" style="background-color: #ffb86f; color: black; font-weight: 610;">Badminton</a>
-            </nav>
-        </header>
+    <aside class="gallery">
+      <!-- <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button> -->
+      <div class="gallery-window">
+        <div class="gallery-imgs">
+          <img
+            class="gallery-img"
+            alt="sindhu"
+            src="image/badminton_sindhu.png"
+          />
+          <img
+            class="gallery-img"
+            alt="huang-dongping"
+            src="image/badminton_hdp.png"
+          />
+          <img
+            class="gallery-img"
+            alt="lukas"
+            src="image/badminton_lukas.png"
+          />
+          <img
+            class="gallery-img"
+            alt="double"
+            src="image/badminton_cover.png"
+          />
+        </div>
+        <div class="gallery-bullet">
+          <span class="bullet" onclick="selectIMG(0)"></span>
+          <span class="bullet" onclick="selectIMG(1)"></span>
+          <span class="bullet" onclick="selectIMG(2)"></span>
+          <span class="bullet" onclick="selectIMG(3)"></span>
+        </div>
+      </div>
+      <!-- <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button> -->
+      <script src="js/script.js"></script>
+    </aside>
 
-        <aside class="gallery">
-            <!-- <button class="gallery-switch" onclick="moveSelector(-1)">&#10094;</button> -->
-            <div class="gallery-window">
-                <div class="gallery-imgs">
-                    <img class="gallery-img" alt="sindhu" src="image/badminton_sindhu.png">
-                    <img class="gallery-img" alt="huang-dongping" src="image/badminton_hdp.png">
-                    <img class="gallery-img" alt="lukas" src="image/badminton_lukas.png">
-                    <img class="gallery-img" alt="double" src="image/badminton_cover.png">
-                </div>
-                <div class="gallery-bullet">
-                    <span class="bullet" onclick="selectIMG(0)"></span>
-                    <span class="bullet" onclick="selectIMG(1)"></span>
-                    <span class="bullet" onclick="selectIMG(2)"></span>
-                    <span class="bullet" onclick="selectIMG(3)"></span>
-                </div>
-            </div>
-            <!-- <button class="gallery-switch" onclick="moveSelector(+1)">&#10095;</button> -->
-            <script src="js/script.js"></script>
-        </aside>
+    <main id="main">
+      <hr />
+      <br />
+      <h1 class="title">As a Badminton Athelete 🏸</h1>
+      <br />
+      <ul class="text">
+        <li>
+          I am currently a member of Michigan Badminton Team, and I play Men's
+          Doubles.
+        </li>
+        <li>
+          I was a member of SJTU Badminton Team and HuangPu District Badminton
+          Team.
+        </li>
+        <li>
+          I won a 🥇 gold medal in <em>Man's Team</em> and 🥈 silver medal in
+          <em>Man's Doubles</em> in Shanghai junior badminton competitions.
+        </li>
+        <li>
+          I won a 🥇 gold medal in <em>Mixed Team</em> on behalf of UM-SJTU
+          Joint Institute in 2019 SJTU Sport Competiton.
+        </li>
+        <li>
+          I won a 🥇 gold medal in <em>Mixed Team</em> in 5th UM-SJTU Joint
+          Institute Teacher-Student Badminton Competition.
+        </li>
+        <li>
+          I won a 🥈 silver medal in <em>Man's Single</em> in 2019 SJTU
+          Badminton Freshman Cup.
+        </li>
+        <li>
+          (New!) I won a 🥉 bronze medal in <em>Mixed Team</em> on behalf of
+          University of Michigan in 2022 US Eastern Collegiate Team Badminton
+          Championships.
+        </li>
+        <li>
+          (New!) I won a 🥈 silver medal in Mixed Doubles A Flight in 2022 Fall
+          U of M Badminton Open. (Beat a professional badminton player called
+          <a
+            target="_blank"
+            href="https://bwfbadminton.com/player/13762/andres-corpancho"
+          >
+            Andres E Corpancho
+          </a>
+          whose BWF world rank in mix doubles was 42)
+        </li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <div class="video">
+        <iframe
+          width="80%"
+          height="600px"
+          src="https://www.youtube.com/embed/3C0a6UDJbaw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <hr />
+    </main>
 
-        <main id="main">
-            <hr>
-            <br>
-            <h1 class="title">As a Badminton Athelete 🏸</h1>
-            <br>
-            <ul class="text">
-                <li>I am currently a member of Michigan Badminton Team, and I play Men's Doubles.</li>
-                <li>I was a member of SJTU Badminton Team and HuangPu District Badminton Team.</li>
-                <li>I won a 🥇 gold medal in <em>Man's Team</em> and 🥈 silver medal in <em>Man's Doubles</em> in Shanghai junior badminton competitions.</li>
-                <li>I won a 🥇 gold medal in <em>Mixed Team</em> on behalf of UM-SJTU Joint Institute in 2019 SJTU Sport Competiton.</li>
-                <li>I won a 🥇 gold medal in <em>Mixed Team</em> in 5th UM-SJTU Joint Institute Teacher-Student Badminton Competition.</li>
-                <li>I won a 🥈 silver medal in <em>Man's Single</em> in 2019 SJTU Badminton Freshman Cup.</li>
-                <li>(New!) I won a 🥉 bronze medal in  <em>Mixed Team</em> on behalf of University of Michigan in 2022 US Eastern Collegiate Team Badminton Championships.</li>
-            </ul>
-            <br>
-            <hr>
-            <br>
-            <div class="video">
-                <iframe width="80%" height="600px" src="https://www.youtube.com/embed/3C0a6UDJbaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <br>
-            <hr>
-        </main>
-
-        <footer>
-            <!-- <a class="back-to-top" href="#main">
+    <footer>
+      <!-- <a class="back-to-top" href="#main">
                 ⬆
             </a> -->
-        </footer>
-    </body>
-
+    </footer>
+  </body>
 </html>

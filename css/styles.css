@@ -1,3 +1,14 @@
+body.preload * {
+  -webkit-transition: none !important;
+  -webkit-animation-duration: 0s !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation-duration: 0s !important;
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s,
+    padding 0s, margin 0s !important;
+}
+
 img {
   width: 50%;
 }
@@ -136,6 +147,32 @@ hr {
   background-color: transparent;
 }
 
+@keyframes select-avatar {
+  from {
+    background-color: #465666;
+    width: 210px;
+    height: 210px;
+  }
+  to {
+    background-color: #6c87a3;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@keyframes unselect-avatar {
+  from {
+    background-color: #6c87a3;
+    width: 270px;
+    height: 270px;
+  }
+  to {
+    background-color: #465666;
+    width: 210px;
+    height: 210px;
+  }
+}
+
 .avatar {
   margin-top: auto;
   margin-bottom: auto;
@@ -146,11 +183,17 @@ hr {
   background-color: #4b5267;
   box-shadow: -6px 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
+  animation-name: unselect-avatar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .avatar:hover {
   box-shadow: -6px 8px 16px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
+  animation-name: select-avatar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .profile-text {
@@ -237,6 +280,24 @@ hr {
   margin-right: 5%;
 }
 
+@keyframes select-card {
+  from {
+    background-color: #465666;
+  }
+  to {
+    background-color: #617991;
+  }
+}
+
+@keyframes unselect-card {
+  from {
+    background-color: #617991;
+  }
+  to {
+    background-color: #465666;
+  }
+}
+
 .project-card {
   box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
@@ -244,12 +305,18 @@ hr {
   margin-right: 15px;
   cursor: pointer;
   background-color: #465666;
+  animation-name: unselect-card;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .project-card:hover {
   box-shadow: -8px 16px 32px 0 rgba(0, 0, 0, 0.5);
   transition: 0.35s;
   text-decoration: none;
+  animation-name: select-card;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .project-text {
@@ -265,25 +332,6 @@ hr {
   margin: 20px 5% 30px 5%;
 }
 
-.project-card-horizontal {
-  display: flex;
-  box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.35s;
-  margin: 0px 6% 30px 6%;
-  cursor: pointer;
-  background-color: #465666;
-}
-
-.project-card-horizontal:hover {
-  box-shadow: -8px 16px 32px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.35s;
-  text-decoration: none;
-}
-
-/* .work-profile {
-  margin: 30px 5% 20px 5%;
-} */
-
 .piano-profile {
   background-image: url(../image/piano_cover.png);
   background-position: center;
@@ -298,7 +346,7 @@ hr {
   width: 55%;
   position: relative;
   top: 20vh;
-  background-color: rgba(30, 30, 30, 1);
+  background-color: rgba(30, 30, 30, 0.8);
   color: black;
   max-height: 80vh;
   padding-bottom: 20px;
@@ -319,90 +367,60 @@ hr {
   line-height: 40px;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 8px;
-  right: 8px;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: #84a9c0;
-  transition: 0.35s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
-
-.back-to-top:hover {
-  text-decoration: none;
-  color: black;
-  background-color: #ffafc5;
-  transition: 0.35s;
-}
-
 .video {
   width: 100%;
   justify-content: center;
   display: flex;
 }
 
-@media (prefers-reduced-motion) {
-  nav a {
-    transition: none;
-  }
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  width: 90%;
+}
 
-  nav a:hover {
-    transition: none;
-  }
+.form-item {
+  margin-bottom: 15px;
+}
 
-  .avatar {
-    transition: none;
-  }
+.form-label {
+  color: #ecb1fc;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 5px;
+}
 
-  .avatar:hover {
-    transition: none;
-  }
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+}
 
-  .gallery-img {
-    transition: none;
-  }
+textarea {
+  width: 100%;
+  height: 125px;
+  font-size: 20px;
+}
 
-  .gallery-img:hover {
-    transition: none;
-  }
+button {
+  font-size: 20px;
+  width: 20%;
+}
 
-  .gallery-switch {
-    transition: none;
-  }
-
-  .gallery-switch:hover {
-    transition: none;
-  }
-
-  .project-card {
-    transition: none;
-  }
-
-  .project-card:hover {
-    transition: none;
-  }
-
-  .project-card-horizontal {
-    transition: none;
-  }
-
-  .project-card-horizontal:hover {
-    transition: none;
-  }
-
-  .back-to-top {
-    transition: none;
-  }
-
-  .back-to-top:hover {
-    transition: none;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    animation-duration: 0s !important;
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s,
+      padding 0s, margin 0s !important;
+    -webkit-transition: none !important;
+    -webkit-animation-duration: 0s !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
   }
 }
 
