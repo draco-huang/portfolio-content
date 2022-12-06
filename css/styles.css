@@ -46,7 +46,7 @@ img {
 
 body {
   display: grid;
-  grid-template: 48px 430px auto 10px/ 100%;
+  grid-template: 48px 430px auto auto/ 100%;
 }
 
 header {
@@ -451,7 +451,7 @@ button {
 
 @media screen and (max-width: 800px) {
   body {
-    grid-template: 192px 400px auto 10px/ 100%;
+    grid-template: 192px 400px auto auto/ 100%;
   }
 
   nav {
@@ -520,5 +520,22 @@ button {
 
   .gallery-imgs {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template: 192px 0px auto auto/ 100%;
+  }
+
+  .gallery,
+  .first-dividor {
+    display: none;
+    visibility: hidden;
+  }
+
+  .avatar {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
