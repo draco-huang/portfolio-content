@@ -135,8 +135,10 @@ a:hover {
   text-decoration: underline;
 }
 
-h3 {
+h3,
+.project-title {
   font-size: 26px;
+  font-weight:normal;
   line-height: 30px;
   color: #ffb86f;
   background-color: transparent;
@@ -537,5 +539,9 @@ button {
   .avatar {
     margin-top: 10px;
     margin-bottom: 15px;
+  }
+
+  .title {
+    font-size: 30px;
   }
 }
